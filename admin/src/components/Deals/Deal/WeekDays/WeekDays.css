@@ -1,0 +1,7 @@
+.WeekDays {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  font-size: 18px;
+  padding: 20px 10px;
+}

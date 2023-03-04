@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Circular-black;
+  src: url(../../../assets/fonts/CircularStd-Black.otf);
+  font-weight: bolder;
+}
+
+.Toolbar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffbc2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+  box-shadow: 0 3px 6px rgba(56,56,56,.562);
+  letter-spacing: -1px;
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+.Logo {
+  height: 80%;
+}
+
+.Toolbar p{
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.hapi {
+  float: left;
+  font-family: Circular-Black;
+  display: block;
+  font-size: 28px;
+}
+
+.hour {
+  float: left;
+  font-family: Circular;
+  display: block;
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+}

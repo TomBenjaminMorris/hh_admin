@@ -1,0 +1,17 @@
+.Deals {
+  text-align: left;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.Deals h1 {
+  font-size: 28px;
+  font-family: Circular-bold;
+  margin: auto;
+}
+
+.AddDealButton {
+  float: right;
+  margin-top: 10px;
+}

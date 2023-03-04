@@ -1,0 +1,51 @@
+.LocationDetailItem {
+  padding: 10px;
+  /* background-color: white; */
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.LocationDetailItem h2 {
+  font-size: 19px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.LocationDetailItem input {
+  margin: auto;
+  font-size: 19px;
+  margin-top: 12px;
+  padding: 5px;
+  border: white solid 1px;
+  border-radius: 3px;
+  box-shadow: 0 0 1px #b8b8b8;
+  min-width: 95%;
+  border:1px solid #ffbc2c79;
+  box-shadow: 0 0 5px #ffbc2c9e;
+  margin-bottom: 5px;
+}
+
+.LocationDetailItem input:focus{
+  outline: none !important;
+  border:1px solid #ffbc2c;
+  box-shadow: 0 0 10px #ffaf04;
+}
+
+.Pill {
+  font-family: Circular-bold;
+  padding-bottom: 10px;
+  border: none;
+  background-color: #f4b42c;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+@media (max-width: 400px) {
+  .LocationDetailItem h2 {
+    font-size: 18px;
+  }
+}

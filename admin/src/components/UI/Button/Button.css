@@ -1,0 +1,40 @@
+.Button {
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Circular-Bold;
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.Button:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: width 250ms ease;
+  z-index: 0;
+}
+.Button:hover:before {
+  width: 100%;
+}
+
+.Success {
+  margin-right: 5px;
+  background-color: #2ecc71;
+}
+.Danger {
+  background-color: #e74c3c;
+}
+.Add {
+  background-color: #877f73e9;
+}
+.Add:hover {
+  background-color: rgb(193, 132, 67);
+}

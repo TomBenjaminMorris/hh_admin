@@ -1,0 +1,65 @@
+.OpeningTimes {
+  margin-top: 10px;
+  /* margin-left: -5px; */
+  /* background-color: cadetblue; */
+  /* width: 200px; */
+  font-size: 18px;
+}
+
+.Title {
+  font-family: Circular-bold;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.DaysAndTimes {
+  width: 100%;
+  /* padding: 5px; */
+  box-sizing: border-box;
+  /* background-color: burlywood; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.SingleDayAndTime {
+  /* background-color: aqua; */
+  /* width: 100%; */
+  box-sizing: border-box;
+  padding: 5px;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* justify-content: center; */
+  align-items: flex-start;  
+}
+
+.Day {
+  font-family: Circular-black;
+  width: 50px;
+  margin-right: 10px;
+  /* margin-left: -10px; */
+}
+
+.Day div {
+  /* float: right;  */
+}
+
+.Time {
+  margin-left: 3px;
+}
+
+.SingleDayAndTime input {
+  all: unset;
+  background-color: white;
+  padding: 3px;
+  margin-left: 3px;
+  border-radius: 5px;
+  border: 1px solid #ffbc2c79;
+  box-shadow: 0 0 5px #ffbc2c9e;
+}

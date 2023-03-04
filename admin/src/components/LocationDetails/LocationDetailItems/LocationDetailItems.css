@@ -1,0 +1,19 @@
+.LocationDetailItems {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ */
+  margin-top: 10px;
+  background-color: rgb(242, 242, 242);
+  padding: 10px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+  .LocationDetailItems {
+    font-size: 14px;
+    overflow: scroll;
+  }
+}

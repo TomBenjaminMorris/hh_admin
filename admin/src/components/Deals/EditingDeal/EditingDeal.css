@@ -1,0 +1,125 @@
+.EditingDeal header {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.EditingDeal header h2 {
+  font-family: Circular-Bold;
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 26px;
+}
+
+.EditingDeal h3 {
+  font-family: Circular-Bold;
+  margin: 0 0 10px;
+  padding: 10px;
+  font-size: 20px;
+  border-top: solid rgba(0, 0, 0, 0.166) 1px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.EditingDeal footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 0;
+  margin-top: 25px;
+}
+
+.Times {
+  text-align: center;
+}
+
+.Times input {
+  padding-left: 8px;
+  font-size: 18px;
+  margin: 5px;
+  font-family: Circular;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(227, 227, 227);
+  text-align: center;
+}
+
+.Deals {
+  width: 100%;
+  margin: auto;
+}
+
+.Deals input {
+  font-family: Circular;
+  font-size: 16px;
+  width: 85%;
+  margin: 5px;
+  border: solid rgba(0, 0, 0, 0.276) 1px;
+  border-radius: 2px;
+  background-color: rgb(238, 238, 238);
+
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.Deals input:focus{
+  outline: none !important;
+  border:1px solid #ffbc2c;
+  box-shadow: 0 0 10px #ffaf04;
+}
+
+.AddDeal {
+  background-color: white;
+  border: none;
+  font-size: 35px;
+  padding: 5px;
+}
+
+.AddDeal:hover {
+  color: #ffaf04;
+  cursor: pointer;
+}
+
+.AddDeal:focus {
+  outline: none;
+}
+
+/* Close Button Styling */
+
+.Close {
+  position: absolute;
+  right: 40px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.4;
+  margin-top: 12px;
+}
+.Close:hover {
+  opacity: 1;
+}
+.Close:before, .Close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 25px;
+  width: 2px;
+  background-color: rgb(24, 24, 24);
+}
+.Close:before {
+  transform: rotate(45deg);
+}
+.Close:after {
+  transform: rotate(-45deg);
+}
+
+.ErrorMessage {
+  font-size: 18px;
+  color: rgb(255, 50, 50);
+  text-align: center;
+  margin: 15px 0px;
+}

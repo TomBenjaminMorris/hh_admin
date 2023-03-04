@@ -1,0 +1,26 @@
+.ToolbarUser {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  margin-bottom: 30px;
+  width: 80%;
+  align-items: center;
+}
+
+.ToolbarUser div {
+  box-sizing: border-box;
+  display: block;
+  padding: 0 6px;
+  color: rgb(238, 237, 237);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ToolbarUser img {
+  height: 20px;
+  padding: 5px;
+}

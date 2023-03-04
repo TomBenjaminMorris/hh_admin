@@ -1,0 +1,44 @@
+.LocationDetails {
+  text-align: left;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.LocationDetails h1 {
+  font-size: 28px;
+  font-family: Circular-bold;
+  margin: auto;
+}
+
+.EditButton {
+  position: absolute;
+  margin-top: 85px;
+  margin-right: 30px;
+  top: 20px;
+  right: 10px;
+}
+
+.Edit {
+  width: 26px;
+  padding: 6px;
+  border-radius: 10px;
+  transition: ease 0.5s;
+}
+
+.Edit:hover {
+  background-color: rgba(148, 208, 122, 0.879);
+}
+
+.SaveCancelButtons {
+  float: right;
+  margin-top: 20px;
+}
+
+.ErrorMessage {
+  font-size: 18px;
+  color: rgb(255, 50, 50);
+  text-align: center;
+  margin: 15px 0px;
+}

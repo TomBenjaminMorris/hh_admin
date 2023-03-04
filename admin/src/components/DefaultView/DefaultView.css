@@ -1,0 +1,110 @@
+.DefaultView {
+  text-align: center;
+}
+
+.HeaderImage {
+  filter: grayscale(40%);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: -100;
+}
+
+.DefaultView h2 {
+  color: white;
+  font-family: Circular-black;
+}
+
+.Button {
+  font-family: Circular-black;
+  font-size: 20px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+}
+
+.Button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.Button:active, .Button:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+.Button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Exculsively For Mobile Styles */
+
+@media (max-width: 500px) {
+  .DefaultView {
+    margin: auto;
+    /* margin-top: 40px; */
+    font-size: 30px;
+    width: 80%;
+  }
+  .HeaderImage {
+    background: url('../../assets/images/background_img2.jpg');
+    height: -webkit-calc(100% - 50px);
+    height:    -moz-calc(100% - 50px);
+    height:         calc(100% - 50px);
+    width: 100%;
+  }
+  .DefaultView h2 {
+    font-size: 55px;
+  }
+  .DefaultView h3 {
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+  }
+  .Button {
+    padding: 15px;
+    background-color: teal;
+    text-align: center;
+  }
+}
+
+/* Exculsively For Desktop Styles */
+
+@media (min-width: 501px) {
+  .DefaultView {
+  }
+  .HeaderImage {
+    background: url('../../assets/images/background_img3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    width: -webkit-calc(100% - 220px);
+    width:    -moz-calc(100% - 220px);
+    width:         calc(100% - 220px);
+    margin-left: 220px;
+  }
+  .ButtonLinks {
+  }
+  .DefaultView h2 {
+    font-size: 50px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    max-width: 1000px;
+  }
+  .DefaultView h3 {
+    margin-top: 150px;
+    font-size: 25px;
+  }
+  .Button {
+    margin-right: 20px;
+  }
+}

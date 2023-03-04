@@ -1,0 +1,31 @@
+.Dialogue header {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.Dialogue header h2 {
+  font-family: Circular-Bold;
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 26px;
+}
+
+.Dialogue article {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  /* line-height: 1.75; */
+}
+
+.Dialogue footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 0;
+}

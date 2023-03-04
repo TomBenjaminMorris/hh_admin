@@ -1,0 +1,110 @@
+.Deal {
+  position: relative;
+  background-color: rgb(242, 242, 242);
+  padding: 10px;
+  border-radius: 8px;
+  color: rgb(72, 72, 72);
+  padding-top: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.Time {
+  font-family: Circular-bold;
+  padding-bottom: 10px;
+  border: none;
+  background-color: rgba(123, 201, 111, 0.817);
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.TimeIcon {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 7px;
+  width: 22px;
+  position: relative;
+  top: 5px;
+}
+
+.CalendarIcon {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 22px;
+  position: relative;
+  top: 5px;
+}
+
+.Days {
+  font-family: Circular-bold;
+  padding-bottom: 10px;
+  border: none;
+  background-color: #f4b42c;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 16px;
+  font-family: Circular-bold;
+}
+
+.DealItem {
+  color: rgb(72, 72, 72);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.Edit {
+  position: absolute;
+  top: 19px;
+  right: 60px; 
+  width: 25px;
+  padding: 6px;
+  border-radius: 10px;
+  transition: ease 0.5s;
+}
+
+.Edit:hover {
+  background-color: rgba(148, 208, 122, 0.879);
+}
+
+.Delete {
+  position: absolute;
+  top: 20px;
+  right: 20px; 
+  width: 25px;
+  height: 24px;
+  padding: 6px;
+  border-radius: 10px;
+  transition: ease 0.5s;
+}
+
+.Delete:hover {
+  background-color: rgba(208, 122, 122, 0.879);
+}
+
+@media screen and (max-width: 700px) {
+  .Deal {
+    padding-top: 70px;
+  }
+  .Time {
+    font-size: 12px;
+  }
+  .Days {
+    font-size: 12px;
+  }
+  .DealItem {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}

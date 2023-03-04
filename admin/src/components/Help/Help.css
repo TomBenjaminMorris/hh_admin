@@ -1,0 +1,47 @@
+.Help {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.Description {
+  margin-top: 30px;
+}
+
+.Description p {
+  font-size: 22px;
+  text-align: justify;
+}
+
+.Help h3 {
+  font-size: 30px;
+}
+
+.HelpLinks {
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.HelpLinks img {
+  width: 120px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+@media (max-width: 500px) {
+  .HelpLinks img {
+    width: 70px;
+    margin: none;
+  }
+
+  .Description {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
