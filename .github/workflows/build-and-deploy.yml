@@ -32,7 +32,6 @@ jobs:
       run: |
         cd admin
         CI=false npm run build
-        ls build/
         echo "Build complete 🏗️"
 
     - name: Configure AWS Credentials
@@ -47,3 +46,4 @@ jobs:
         aws s3 sync admin/build/ s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read
         aws cloudfront create-invalidation --distribution-id E3RNTECZAKSIOO --paths "/*"
         aws cloudfront create-invalidation --distribution-id E2LPK39VY9LLAW --paths "/*"
+
