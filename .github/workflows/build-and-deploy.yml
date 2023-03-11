@@ -16,7 +16,7 @@ jobs:
     env:
      AWS_DEFAULT_REGION: eu-west-2
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Use Node.js 16
       uses: actions/setup-node@v3
@@ -26,6 +26,8 @@ jobs:
     - name: Install Packages
       run: |
         cd admin
+        echo "REACT_APP_MAP_API_KEY=${{ secrets.REACT_APP_MAP_API_KEY }}" > .env
+        echo "REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }}" >> .env
         npm install
 
     - name: Build React App
@@ -46,4 +48,3 @@ jobs:
         aws s3 sync admin/build/ s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read
         aws cloudfront create-invalidation --distribution-id E3RNTECZAKSIOO --paths "/*"
         aws cloudfront create-invalidation --distribution-id E2LPK39VY9LLAW --paths "/*"
-
