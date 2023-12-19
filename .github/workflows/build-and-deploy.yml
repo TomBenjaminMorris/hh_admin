@@ -45,6 +45,6 @@ jobs:
 
     - name: Sync S3 & Invalidate Caches
       run: |
-        aws s3 sync admin/build/ s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read
+        aws s3 sync admin/build/ s3://${{ secrets.AWS_S3_BUCKET }}
         aws cloudfront create-invalidation --distribution-id E3RNTECZAKSIOO --paths "/*"
         aws cloudfront create-invalidation --distribution-id E2LPK39VY9LLAW --paths "/*"
