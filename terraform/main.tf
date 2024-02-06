@@ -20,7 +20,8 @@ locals {
 }
 
 module "static-website" {
-  source = "git@github.com:TomBenjaminMorris/tf-modules.git//static-website?ref=static-website-v0.0.3"
+  source = "git@github.com:TomBenjaminMorris/tf-modules.git//static-website?ref=static-website-v0.0.6"
+  #source = "/Users/tommorris/Documents/DevOps/Topics/Terraform/Projects/tf-modules/static-website"
 
   domain_name       = local.domain_name
   root_domain_zone  = local.root_domain_name
