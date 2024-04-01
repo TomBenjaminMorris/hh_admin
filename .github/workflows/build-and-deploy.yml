@@ -46,7 +46,7 @@ jobs:
 
     - name: Sync S3 & Invalidate Caches
       run: |
-        aws s3 sync client/build/ s3://${{ secrets.AWS_S3_BUCKET }}
+        aws s3 sync admin/build/ s3://${{ secrets.AWS_S3_BUCKET }}
         dist1=`aws cloudfront list-distributions --query "DistributionList.Items[?Comment=='admin.hapihour.io'].Id" --output text`
         dist2=`aws cloudfront list-distributions --query "DistributionList.Items[?Comment=='www.admin.hapihour.io'].Id" --output text`
         aws cloudfront create-invalidation --distribution-id $dist1 --paths "/*"
