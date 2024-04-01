@@ -1,5 +1,6 @@
 name: BuildAndDeploy
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -39,12 +40,14 @@ jobs:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
-        role-to-assume: arn:aws:iam::905016994436:role/github-actions-role
+        role-to-assume: ${{ vars.TF_AWS_ROLE }}
         role-session-name: samplerolesession
         aws-region: ${{env.AWS_DEFAULT_REGION}}
 
     - name: Sync S3 & Invalidate Caches
       run: |
-        aws s3 sync admin/build/ s3://${{ secrets.AWS_S3_BUCKET }}
-        aws cloudfront create-invalidation --distribution-id E3RNTECZAKSIOO --paths "/*"
-        aws cloudfront create-invalidation --distribution-id E2LPK39VY9LLAW --paths "/*"
+        aws s3 sync client/build/ s3://${{ secrets.AWS_S3_BUCKET }}
+        dist1=`aws cloudfront list-distributions --query "DistributionList.Items[?Comment=='admin.hapihour.io'].Id" --output text`
+        dist2=`aws cloudfront list-distributions --query "DistributionList.Items[?Comment=='www.admin.hapihour.io'].Id" --output text`
+        aws cloudfront create-invalidation --distribution-id $dist1 --paths "/*"
+        aws cloudfront create-invalidation --distribution-id $dist2 --paths "/*"
