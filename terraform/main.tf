@@ -23,7 +23,7 @@ locals {
   project_name      = "admin-hapihour"
   domain_name       = "admin.hapihour.io"
   root_domain_name  = "hapihour.io"
-  allowed_locations = ["GB"]
+  allowed_locations = ["GB", "US"]
   common_tags = {
     Project = "admin.hapihour.io"
   }
